@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+
+const navbar = new URL("./assets/landing/Nav Bar_landing page.png", import.meta.url)
+const createButton = new URL("./assets/landing/Create event button.png", import.meta.url)
+
+const productLeft = new URL("./assets/landing/Product Image _ Left.png", import.meta.url)
+const productMiddle = new URL("./assets/landing/Product Image _ Middle.png", import.meta.url)
+const productRight = new URL("./assets/landing/Product Image _ Right.png", import.meta.url)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="navbar" src={navbar}/>
+      <div>
+        <text id="title">Facebook events <br/> without Facebook.</text>
+        <br/>
+        <text id="desc">Easily host and share events with your <br/> friends across any social media.</text>
+      </div>
+      <img className="createButton" src={createButton}/>
+      <div className="productImages">
+        <img className="productLeft" src={productLeft}/>
+        <img className="productMiddle" src={productMiddle}/>
+        <img className="productRight" src={productRight}/>
+      </div>
     </div>
   );
 }

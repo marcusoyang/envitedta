@@ -1,38 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url('./assets/landing/Landing page background gradient.png');
+  background-size: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  max-width: 95%;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 30px;
+  /* or 94% */
+  letter-spacing: -0.32px;
+  color: #FFFFFF;
+}
+
+#desc {
+  margin-top: 3rem;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.32px;
+  color: #FFFFFF;
+}
+
+.createButton {
+  margin-top: 3rem;
+  width: 300px;
+}
+
+.productImages {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/landing/Social Media icons _ all grouped.png");
+  background-size: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.productLeft {
+  margin-right: 40px;
+  height: 400px;
+}
+
+.productMiddle {
+  position: absolute;
+  height: 550px;
+}
+
+.productRight {
+  margin-left: 40px;
+  height: 400px;
 }
